@@ -1,0 +1,27 @@
+{
+  "name": "telegram-reminder-bot",
+  "description": "Telegram reminder bot with MongoDB integration",
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API hash",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Telegram bot token",
+      "required": true
+    },
+    "DB:URL": {
+      "description": "MongoDB connection URL",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
